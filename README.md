@@ -1,38 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Frontend Information (Development in Progress)
 
-## Getting Started
+Frontend Framework: React.js with Next.js
+Styling Framework: Tailwind CSS
+State Management: Redux
 
-First, run the development server:
+### Key Features:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Ecommerce Integration: The application is integrated with an API built using Django Rest Framework, which enables customers to make direct payments for digital files using PayPal. This provides a convenient and secure payment option for customers, ensuring a seamless purchasing experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Contributor Earnings: The application includes a unique feature where contributors can earn revenue for each purchase made by customers. A portion of the payment made by customers goes to the contributor's wallet balance, increasing their earnings. This incentivizes contributors to share high-quality digital files and provides them with a source of income for their creative work.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Platform Overview:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The application serves as a marketplace that connects contributors and customers, facilitating the sharing and selling of digital products. It streamlines the process for both contributors and customers, making it easy for contributors to monetize their work and for customers to access premium digital files.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Frontend Technologies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- React.js: A popular JavaScript library for building user interfaces, used to create the frontend of the application.
+- Next.js: A popular framework built on top of React.js for server-rendered React applications with features such as server-side rendering, static site generation, and API routes.
+- Tailwind CSS: A highly customizable CSS framework used for styling the frontend of the application, providing a modern and responsive design.
+- Redux: A popular state management library used for managing the application state and handling data flow in the frontend of the application.
