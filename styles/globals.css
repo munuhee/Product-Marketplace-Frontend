@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Mode */
+.dark-mode {
+  --bg-color: #111827;
+  --text-color: #f7fafc;
+}
+
+/* Light Mode */
+.light-mode {
+  --bg-color: #f7fafc;
+  --text-color: #111827;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+.placeholder-center::placeholder {
+    transform: translateX(-50%);
+  }
+  @media (max-width: 639px) {
+    .hero-custom-height {
+      height: 400px;
+      padding: 40px;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 767px) {
+    .hero-custom-height {
+      height: 400px;
+      padding: 80px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .hero-custom-height {
+      height: 400px;
+      padding: 90px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-custom-height {
+      height: 450px;
+      padding: 100px;
+    }
+  }
