@@ -10,15 +10,19 @@
 
 /* Light Mode */
 .light-mode {
-  --bg-color: #f7fafc;
-  --text-color: #111827;
+  --bg-color: #f75afc;
+  --text-color: rgb(209 213 219)
 }
 
 body {
   background-color: var(--bg-color);
-  color: var(--text-color);
+  --tw-opacity: 1;
+  color: rgb(55 65 81 /var(--tw-opacity))
 }
 
+.hero{
+  background-image: linear-gradient(to right, #10B981, #047857);
+}
 
 .placeholder-center::placeholder {
     transform: translateX(-50%);
@@ -50,3 +54,9 @@ body {
       padding: 100px;
     }
   }
+
+  .login_img_section {
+    background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://res.cloudinary.com/murste/image/upload/v1682428006/loginsection_krtem6.avif) center center;
+  }
+
+

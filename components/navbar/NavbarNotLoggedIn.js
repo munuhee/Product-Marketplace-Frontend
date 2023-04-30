@@ -5,7 +5,7 @@ export const NavbarNotLoggedIn = () => {
     return (
       <>
         <Link href="/auth/register" legacyBehavior>
-          <button class="font-semibold py-2 px-4 rounded">
+          <button className="font-semibold py-2 px-4 rounded">
             Sign up Free
           </button>
         </Link>

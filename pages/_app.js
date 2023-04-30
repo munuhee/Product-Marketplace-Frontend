@@ -5,10 +5,9 @@ import store from '../store';
 import { Provider } from 'react-redux';
 import Navbar from '@/components/navbar';
 
-function MyApp({ Component, pageProps }) {
 
-  const isLoggedIn = false;
-  const username = "Stephen";
+function MyApp({ Component, pageProps }) {
+  const isLoggedIn = true;
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
       const storedValue = window.localStorage.getItem('darkMode');
@@ -42,8 +41,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
-      <Navbar isLoggedIn={isLoggedIn} username={username} toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
-      <Component {...pageProps} />
+      <Navbar isLoggedIn={isLoggedIn} toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
+      <div className='mt-16'>
+        <Component {...pageProps} />
+      </div>
     </Provider>
   );
 }

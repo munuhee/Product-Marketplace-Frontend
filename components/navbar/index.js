@@ -6,7 +6,7 @@ import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = ({ isLoggedIn, username, toggleDarkMode, darkMode }) => {
   return (
-    <nav className="flex items-center justify-between flex-wrap p-4">
+    <nav className="fixed top-0 left-0 right-0 z-10 flex items-center justify-between flex-wrap p-4 shadow-lg bg-white">
       <div className="flex items-center flex-shrink-0 mr-6">
         <Link href="/" legacyBehavior>
           <a className="font-bold text-xl tracking-tight">Ecommerce App</a>
@@ -28,7 +28,7 @@ const Navbar = ({ isLoggedIn, username, toggleDarkMode, darkMode }) => {
         <button onClick={toggleDarkMode}>
           <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
         </button>
-      {isLoggedIn ? <NavbarLoggedIn username={username} /> : <NavbarNotLoggedIn />}
+        {isLoggedIn ? <NavbarLoggedIn username={username} /> : <NavbarNotLoggedIn />}
       </div>
     </nav>
   )
